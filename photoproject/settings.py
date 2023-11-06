@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-0@uzvko@3$i9+-x!r6%844r^s1c-0+k&_*)#%403b!#6nj7-vm'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
@@ -123,6 +123,8 @@ USE_TZ = True
 STATIC_URL = 'static/'
 # 追加
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),) #BASE_DIRの後ろにstaticを追加
+
+STATIC_ROOT = '/home/ubuntu/static' # 本番環境でstaticフォルダを配置する場所
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
