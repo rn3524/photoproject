@@ -1,0 +1,19 @@
+{% extends "base.html" %} {% comment %} base.htmlをひな型で使う {% endcomment %}
+
+{% comment %} base.htmlのtitleブロックに当てはめる内容 {% endcomment %}
+{% block title %}Photo Gallery{% endblock title %}
+
+    {% comment %} base.htmlのcontentsブロックに当てはめる内容 {% endcomment %}
+    {% block contents %}
+    
+    {% comment %} photos_title.htmlの内容を入れる {% endcomment %}
+    {% include "photos_title.html" %}
+    {% comment %} photos_title.htmlの内容を入れる {% endcomment %}
+    {% include "photos_list.html" %}
+    {% comment %} pagination.htmlの内容を入れる {% endcomment %}
+    {% include "pagination.html" %}
+    
+    {% endblock contents %}
+
+
+
